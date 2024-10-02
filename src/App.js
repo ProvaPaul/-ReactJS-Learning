@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Demo from './components/Demo';
 import Cat from './images/cat.jpg';
+import FuncComponent from './components/FuncComponent';
+import TitleComponent from './components/TitleComponent';
 function App() {
   return (
     <div className="App">
-      <Demo name="putu" country="BD"/>
+      {/* <Demo name="putu" country="BD"/>
       <Demo name="cutu" country="BD"/>
       <Demo name="eutu" country="BD"/>
       <Demo name="outu" country="BD">
@@ -14,6 +16,8 @@ function App() {
         <img src={Cat}></img>
 
       </Demo>
+      <FuncComponent/> */}
+      <TitleComponent/>
       </div>
   );
 }
