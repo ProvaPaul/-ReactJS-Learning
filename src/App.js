@@ -10,6 +10,9 @@ import EmployeeList from './components/EmployeeList';
 import RegularStyleSheet from './components/RegularStyleSheet';
 import './components/myStyle.css'
 import Inline from './components/Inline';
+import './appStyle.css'
+import moduleStyles from './myAppStyles.module.css'
+
 function App() {
   return (
     <div className="App">
@@ -28,8 +31,11 @@ function App() {
       {/* <UserLogin/> */}
       {/* <EmployeeList/> */}
       {/* <StudentList/> */}
-      {/* <RegularStyleSheet primary={true} /> */}
-      <Inline/>
+      {/* <RegularStyleSheet primary={true} />
+      <Inline/> */}
+
+      <h5 className='error'>Error!!</h5>
+        <h5 className={moduleStyles.success}>Success!!</h5>
       </div>
   );
 }
