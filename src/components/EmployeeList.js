@@ -6,24 +6,28 @@ export default function EmployeeList() {
 
     const employees=[
         {
+            id:1,
             name: "prova",
             age: "23",
             country :"BD",
             gender: "female"
         },
         {
+            id:2,
             name: "shaan",
             age: "1",
             country :"BD",
             gender: "female"
         },
         {
+            id:3,
             name: "kalpana",
             age: "50",
             country :"BD",
             gender: "female"
         },
         {
+            id:4,
             name: "donno",
             age: "25",
             country :"BD",
@@ -63,12 +67,17 @@ export default function EmployeeList() {
     {/* now create employee.js and put the code into that file */}
     {
         employees.map((employee)=>
-            <Employee
+            <div key={employee.id}>
+                <Employee
+            // for using unique id.(here name can be used if each name is unique)
+         
          name={employee.name}
          age={employee.age}
          country={employee.country}
          gender={employee.gender}
           />
+            </div>
+        
         )
     }
     </div>
