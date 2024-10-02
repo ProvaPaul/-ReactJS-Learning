@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Demo = ({name}) => {
+const Demo = (props) => {
     return (
         <div>
-            <h1>{name}</h1>
+            <h1>{props.name} from {props.country}</h1>
+            <p>{props.children}</p>
         </div>
     );
 };
