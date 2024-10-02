@@ -7,6 +7,9 @@ import TitleComponent from './components/TitleComponent';
 import ClickEventHandler from './components/ClickEventHandler';
 import UserLogin from './components/UserLogin';
 import EmployeeList from './components/EmployeeList';
+import RegularStyleSheet from './components/RegularStyleSheet';
+import './components/myStyle.css'
+import Inline from './components/Inline';
 function App() {
   return (
     <div className="App">
@@ -23,7 +26,10 @@ function App() {
       {/* <TitleComponent/> */}
       {/* <ClickEventHandler/> */}
       {/* <UserLogin/> */}
-      <EmployeeList/>
+      {/* <EmployeeList/> */}
+      {/* <StudentList/> */}
+      {/* <RegularStyleSheet primary={true} /> */}
+      <Inline/>
       </div>
   );
 }
