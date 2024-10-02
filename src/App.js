@@ -5,6 +5,8 @@ import Cat from './images/cat.jpg';
 import FuncComponent from './components/FuncComponent';
 import TitleComponent from './components/TitleComponent';
 import ClickEventHandler from './components/ClickEventHandler';
+import UserLogin from './components/UserLogin';
+import EmployeeList from './components/EmployeeList';
 function App() {
   return (
     <div className="App">
@@ -19,7 +21,9 @@ function App() {
       </Demo>
       <FuncComponent/> */}
       {/* <TitleComponent/> */}
-      <ClickEventHandler/>
+      {/* <ClickEventHandler/> */}
+      {/* <UserLogin/> */}
+      <EmployeeList/>
       </div>
   );
 }
