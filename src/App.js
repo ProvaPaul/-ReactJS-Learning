@@ -12,6 +12,7 @@ import './components/myStyle.css'
 import Inline from './components/Inline';
 import './appStyle.css'
 import moduleStyles from './myAppStyles.module.css'
+import FormInput from './components/FormInput';
 
 function App() {
   return (
@@ -34,8 +35,9 @@ function App() {
       {/* <RegularStyleSheet primary={true} />
       <Inline/> */}
 
-      <h5 className='error'>Error!!</h5>
-        <h5 className={moduleStyles.success}>Success!!</h5>
+      {/* <h5 className='error'>Error!!</h5>
+        <h5 className={moduleStyles.success}>Success!!</h5> */}
+      <FormInput/>
       </div>
   );
 }
