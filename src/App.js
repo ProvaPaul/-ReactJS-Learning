@@ -15,6 +15,8 @@ import moduleStyles from './myAppStyles.module.css'
 import FormInput from './components/FormInput';
 import Counter from './components/Hooks/Counter';
 import Counter2 from './components/Hooks/Counter2';
+import Counter3 from './components/Hooks/Counter3';
+import HookStateArray from './components/Hooks/HookStateArray';
 
 function App() {
   return (
@@ -41,7 +43,9 @@ function App() {
         <h5 className={moduleStyles.success}>Success!!</h5> */}
       {/* <FormInput/> */}
       {/* <Counter/> */}
-      <Counter2/>
+      {/* <Counter2/> */}
+      {/* <Counter3/> */}
+      <HookStateArray/>
       </div>
   );
 }
