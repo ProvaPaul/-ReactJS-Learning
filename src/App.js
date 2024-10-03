@@ -13,6 +13,7 @@ import Inline from './components/Inline';
 import './appStyle.css'
 import moduleStyles from './myAppStyles.module.css'
 import FormInput from './components/FormInput';
+import Counter from './components/Hooks/Counter';
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
 
       {/* <h5 className='error'>Error!!</h5>
         <h5 className={moduleStyles.success}>Success!!</h5> */}
-      <FormInput/>
+      {/* <FormInput/> */}
+      <Counter/>
       </div>
   );
 }
