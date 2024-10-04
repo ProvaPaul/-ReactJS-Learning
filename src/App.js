@@ -31,32 +31,34 @@ import React, { Component, useReducer } from 'react';
 import ComponentA from './components/UseContextWithReducer/ComponentA'
 import ComponentX from './components/UseContextWithReducer/ComponentX'
 import ComponentZ from './components/UseContextWithReducer/ComponentZ'
+import UseStateDataFetch from './UseState and UseReducer/UseStateDataFetch';
+import UseReducerDataFetch from './UseState and UseReducer/UseReducerDataFetch';
 // for understanding useState and useReducer
 
-export const CountContext = React.createContext()
-const initialState=0;
-const reducer=(state,action)=>{
-    switch(action){
-        case 'increment':
-            return state+1
-        case 'decrement':
-            return state-1
-        case 'reset':
-            return initialState
-        default:
-            return state
-    }
-}
+// export const CountContext = React.createContext()
+// const initialState=0;
+// const reducer=(state,action)=>{
+//     switch(action){
+//         case 'increment':
+//             return state+1
+//         case 'decrement':
+//             return state-1
+//         case 'reset':
+//             return initialState
+//         default:
+//             return state
+//     }
+// }
 
 function App() {
-  const [count,dispatch]=useReducer(reducer,initialState)
+  // const [count,dispatch]=useReducer(reducer,initialState)
   return (
-    <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+    // <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
       <div className="App">
-      Count: {count}
-      <ComponentA/>
-      <ComponentX/>
-      <ComponentZ/>
+    {/* //   Count: {count}
+    //   <ComponentA/>
+    //   <ComponentX/>
+    //   <ComponentZ/> */}
       {/* <Demo name="putu" country="BD"/>
       <Demo name="cutu" country="BD"/>
       <Demo name="eutu" country="BD"/>
@@ -93,8 +95,11 @@ function App() {
       {/* <MyCounter2/> */}
       {/* <MyCounter3/> */}
 
+      {/* <UseStateDataFetch/> */}
+      <UseReducerDataFetch/>
+
       </div>
-    </CountContext.Provider>
+    // </CountContext.Provider>
     
   );
 }
