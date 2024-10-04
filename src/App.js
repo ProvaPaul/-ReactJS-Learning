@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Demo from './components/Demo';
+import Demo from './components/BasicTopics/Demo';
 import Cat from './images/cat.jpg';
-import FuncComponent from './components/FuncComponent';
-import TitleComponent from './components/TitleComponent';
-import ClickEventHandler from './components/ClickEventHandler';
-import UserLogin from './components/UserLogin';
-import EmployeeList from './components/EmployeeList';
-import RegularStyleSheet from './components/RegularStyleSheet';
-import './components/myStyle.css'
-import Inline from './components/Inline';
+import FuncComponent from './components/BasicTopics/FuncComponent';
+import TitleComponent from './components/BasicTopics/TitleComponent';
+import ClickEventHandler from './components/BasicTopics/ClickEventHandler';
+import UserLogin from './components/BasicTopics/UserLogin';
+// import EmployeeList from './components/BasicTopics/EmployeeList';
+import RegularStyleSheet from './components/BasicTopics/RegularStyleSheet';
+import './components/BasicTopics/myStyle.css'
+import Inline from './components/BasicTopics/Inline';
 import './appStyle.css'
 import moduleStyles from './myAppStyles.module.css'
-import FormInput from './components/FormInput';
+import FormInput from './components/BasicTopics/FormInput';
 import Counter from './components/Hooks/Counter';
 import Counter2 from './components/Hooks/Counter2';
 import Counter3 from './components/Hooks/Counter3';
@@ -23,6 +23,7 @@ import CleanupFunction from './components/UseEffectPractice/CleanupFunction';
 import MouseCountainer from './components/UseEffectPractice/MouseCountainer';
 import FetchMultiplePost from './components/DataFetching/FetchMultiplePost';
 import FetchMultiplePost2 from './components/DataFetching/FetchMultiplePost2';
+import MyCounter1 from './components/UseReducerPractice/MyCounter1';
 
 function App() {
   return (
@@ -57,7 +58,10 @@ function App() {
       {/* <CleanupFunction/> */}
       {/* <MouseCountainer/> */}
       {/* <FetchMultiplePost/> */}
-      <FetchMultiplePost2/>
+      {/* <FetchMultiplePost2/> */}
+
+      <MyCounter1/>
+
       </div>
   );
 }

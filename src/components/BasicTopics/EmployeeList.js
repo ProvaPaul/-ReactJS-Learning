@@ -1,5 +1,5 @@
 import React from 'react'
-import Employee from './Employee';
+import Employee from './BasicTopics/Employee';
 
 export default function EmployeeList() {
     // const arr=["shuma","ruma","jhuma","tuma"];
