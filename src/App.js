@@ -18,6 +18,7 @@ import Counter2 from './components/Hooks/Counter2';
 import Counter3 from './components/Hooks/Counter3';
 import HookStateArray from './components/Hooks/HookStateArray';
 import EffectExample from './components/UseEffectPractice/EffectExample';
+import EffectExample2 from './components/UseEffectPractice/EffectExample2';
 
 function App() {
   return (
@@ -47,7 +48,8 @@ function App() {
       {/* <Counter2/> */}
       {/* <Counter3/> */}
       {/* <HookStateArray/> */}
-      <EffectExample/>
+      {/* <EffectExample/> */}
+      <EffectExample2/>
       </div>
   );
 }
