@@ -26,10 +26,37 @@ import FetchMultiplePost2 from './components/DataFetching/FetchMultiplePost2';
 import MyCounter1 from './components/UseReducerPractice/MyCounter1';
 import MyCounter2 from './components/UseReducerPractice/MyCounter2';
 import MyCounter3 from './components/UseReducerPractice/MyCounter3';
+import React, { Component, useReducer } from 'react';
+
+import ComponentA from './components/UseContextWithReducer/ComponentA'
+import ComponentX from './components/UseContextWithReducer/ComponentX'
+import ComponentZ from './components/UseContextWithReducer/ComponentZ'
+// for understanding useState and useReducer
+
+export const CountContext = React.createContext()
+const initialState=0;
+const reducer=(state,action)=>{
+    switch(action){
+        case 'increment':
+            return state+1
+        case 'decrement':
+            return state-1
+        case 'reset':
+            return initialState
+        default:
+            return state
+    }
+}
 
 function App() {
+  const [count,dispatch]=useReducer(reducer,initialState)
   return (
-    <div className="App">
+    <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+      <div className="App">
+      Count: {count}
+      <ComponentA/>
+      <ComponentX/>
+      <ComponentZ/>
       {/* <Demo name="putu" country="BD"/>
       <Demo name="cutu" country="BD"/>
       <Demo name="eutu" country="BD"/>
@@ -64,9 +91,11 @@ function App() {
 
       {/* <MyCounter1/> */}
       {/* <MyCounter2/> */}
-      <MyCounter3/>
+      {/* <MyCounter3/> */}
 
       </div>
+    </CountContext.Provider>
+    
   );
 }
 
