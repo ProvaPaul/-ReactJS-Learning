@@ -19,6 +19,7 @@ import Counter3 from './components/Hooks/Counter3';
 import HookStateArray from './components/Hooks/HookStateArray';
 import EffectExample from './components/UseEffectPractice/EffectExample';
 import EffectExample2 from './components/UseEffectPractice/EffectExample2';
+import CleanupFunction from './components/UseEffectPractice/CleanupFunction';
 
 function App() {
   return (
@@ -49,7 +50,8 @@ function App() {
       {/* <Counter3/> */}
       {/* <HookStateArray/> */}
       {/* <EffectExample/> */}
-      <EffectExample2/>
+      {/* <EffectExample2/> */}
+      <CleanupFunction/>
       </div>
   );
 }
