@@ -25,6 +25,7 @@ import FetchMultiplePost from './components/DataFetching/FetchMultiplePost';
 import FetchMultiplePost2 from './components/DataFetching/FetchMultiplePost2';
 import MyCounter1 from './components/UseReducerPractice/MyCounter1';
 import MyCounter2 from './components/UseReducerPractice/MyCounter2';
+import MyCounter3 from './components/UseReducerPractice/MyCounter3';
 
 function App() {
   return (
@@ -62,7 +63,8 @@ function App() {
       {/* <FetchMultiplePost2/> */}
 
       {/* <MyCounter1/> */}
-      <MyCounter2/>
+      {/* <MyCounter2/> */}
+      <MyCounter3/>
 
       </div>
   );
