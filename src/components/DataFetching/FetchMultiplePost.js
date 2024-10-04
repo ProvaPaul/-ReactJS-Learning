@@ -18,7 +18,7 @@ export default function FetchMultiplePost() {
         <ul>
             {
                 posts.map((post)=>(
-                    <li key={post.id}>{post.body}</li>
+                    <li key={post.id}>{post.title}</li>
                 ))
             }
         </ul>

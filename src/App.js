@@ -22,6 +22,7 @@ import EffectExample2 from './components/UseEffectPractice/EffectExample2';
 import CleanupFunction from './components/UseEffectPractice/CleanupFunction';
 import MouseCountainer from './components/UseEffectPractice/MouseCountainer';
 import FetchMultiplePost from './components/DataFetching/FetchMultiplePost';
+import FetchMultiplePost2 from './components/DataFetching/FetchMultiplePost2';
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
       {/* <EffectExample2/> */}
       {/* <CleanupFunction/> */}
       {/* <MouseCountainer/> */}
-      <FetchMultiplePost/>
+      {/* <FetchMultiplePost/> */}
+      <FetchMultiplePost2/>
       </div>
   );
 }
