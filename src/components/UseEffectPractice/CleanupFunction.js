@@ -12,6 +12,11 @@ export default function CleanupFunction() {
     useEffect(()=>{
         console.log('useEffect is called')
         window.addEventListener('mousemove',logMousePosition)
+        // this is the extended part for understanding component unmount
+        return ()=>{
+          window.removeEventListener('mousemove',logMousePosition)
+          console.log('component is unmounted and the code is clean')
+        }
     },[])
   return (
     <div>

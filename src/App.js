@@ -20,6 +20,7 @@ import HookStateArray from './components/Hooks/HookStateArray';
 import EffectExample from './components/UseEffectPractice/EffectExample';
 import EffectExample2 from './components/UseEffectPractice/EffectExample2';
 import CleanupFunction from './components/UseEffectPractice/CleanupFunction';
+import MouseCountainer from './components/UseEffectPractice/MouseCountainer';
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
       {/* <HookStateArray/> */}
       {/* <EffectExample/> */}
       {/* <EffectExample2/> */}
-      <CleanupFunction/>
+      {/* <CleanupFunction/> */}
+      <MouseCountainer/>
       </div>
   );
 }
