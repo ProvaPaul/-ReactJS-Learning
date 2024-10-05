@@ -34,6 +34,7 @@ import ComponentZ from './components/UseContextWithReducer/ComponentZ'
 import UseStateDataFetch from './components/UseState and UseReducer/UseStateDataFetch';
 import UseReducerDataFetch from './components/UseState and UseReducer/UseReducerDataFetch';
 import MainComponent from './components/UseCallBackHook/MainComponent';
+import MyMemoCounter from './components/UseMemoHook/MyMemoCounter';
 // for understanding useState and useReducer
 
 // export const CountContext = React.createContext()
@@ -98,7 +99,8 @@ function App() {
 
       {/* <UseStateDataFetch/> */}
       {/* <UseReducerDataFetch/> */}
-      <MainComponent/>
+      {/* <MainComponent/> */}
+      <MyMemoCounter/>
 
       </div>
     // </CountContext.Provider>
