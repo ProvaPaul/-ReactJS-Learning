@@ -31,8 +31,9 @@ import React, { Component, useReducer } from 'react';
 import ComponentA from './components/UseContextWithReducer/ComponentA'
 import ComponentX from './components/UseContextWithReducer/ComponentX'
 import ComponentZ from './components/UseContextWithReducer/ComponentZ'
-import UseStateDataFetch from './UseState and UseReducer/UseStateDataFetch';
-import UseReducerDataFetch from './UseState and UseReducer/UseReducerDataFetch';
+import UseStateDataFetch from './components/UseState and UseReducer/UseStateDataFetch';
+import UseReducerDataFetch from './components/UseState and UseReducer/UseReducerDataFetch';
+import MainComponent from './components/UseCallBackHook/MainComponent';
 // for understanding useState and useReducer
 
 // export const CountContext = React.createContext()
@@ -96,7 +97,8 @@ function App() {
       {/* <MyCounter3/> */}
 
       {/* <UseStateDataFetch/> */}
-      <UseReducerDataFetch/>
+      {/* <UseReducerDataFetch/> */}
+      <MainComponent/>
 
       </div>
     // </CountContext.Provider>
