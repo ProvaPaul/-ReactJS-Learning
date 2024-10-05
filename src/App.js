@@ -35,6 +35,7 @@ import UseStateDataFetch from './components/UseState and UseReducer/UseStateData
 import UseReducerDataFetch from './components/UseState and UseReducer/UseReducerDataFetch';
 import MainComponent from './components/UseCallBackHook/MainComponent';
 import MyMemoCounter from './components/UseMemoHook/MyMemoCounter';
+import FocusInput from './components/useRefHook/FocusInput';
 // for understanding useState and useReducer
 
 // export const CountContext = React.createContext()
@@ -100,7 +101,8 @@ function App() {
       {/* <UseStateDataFetch/> */}
       {/* <UseReducerDataFetch/> */}
       {/* <MainComponent/> */}
-      <MyMemoCounter/>
+      {/* <MyMemoCounter/> */}
+      <FocusInput/>
 
       </div>
     // </CountContext.Provider>
